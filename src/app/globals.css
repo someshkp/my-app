@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -71,21 +71,22 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
-}
+} */
 
-* {
+/* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+} */
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -104,4 +105,320 @@ a {
   html {
     color-scheme: dark;
   }
+}  */
+
+body{
+  background-color: #f4f4f4;
+}
+
+.logo-section{
+
+}
+
+.loginSection{
+  display: flex;
+  background-color: #ffffff;
+  margin: 80px;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.descriptionSection{
+  flex: 1;
+  /* margin: 5px; Add some margin between the boxes */
+  align-items: left;
+
+}
+
+.line1 {
+font-family: 'Söhne Test';
+font-size: 24px;
+font-weight: 400;
+text-align: left;
+}
+
+.line2{
+font-family: 'Söhne Test';
+font-size: 48px;
+font-weight: 500;
+text-align: left;
+margin-block: initial;
+}
+
+.line3{
+  font-family: 'Söhne Test';
+font-size: 24px;
+font-weight: 400;
+text-align: left;
+
+}
+
+.fieldsSection{
+  flex: 1;
+  margin: 5px;
+  padding: 5px;
+  align-content: center;
+}
+
+.emailInputField{
+  padding: 13px;
+  width: 94%;
+  font-size: 15px;
+  border: 1px solid #939393;
+}
+
+.button-container{
+  display: flex;
+    flex-direction: row-reverse;
+    margin-top: 9px;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.button:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5); */
+}
+
+.button:focus-visible {
+  outline: none;
+  /* box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5); */
+}
+
+.footer-container{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.footerContainer{
+  background-color: black;
+     width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    height: 300px;
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.icons{
+   margin: 10px;
+}
+
+li{
+  padding: 14px;
+}
+
+/* for password screen */
+.center{
+  padding: 13px;
+  width: 94%;
+  font-size: 15px;
+  border-color:#000;
+  border-width:'1px';
+}
+.image{
+  width: 100%;
+  position: relative;
+  
+}
+.ab{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding-right: 1px;
+}
+.passwordInputField{
+    display: block;
+  width: 100%;
+  height: 45px;
+  padding: 0 5px;
+  font-size: 15px;
+  border-radius:2px;
+}
+
+.button-text-container{
+  display: flex;
+  margin-top: 9px;
+  justify-content: space-around;
+}
+
+.passwordSection{
+  background-color: #ffffff;
+  margin: 30px;
+  border-radius: 40px;
+}
+
+.mainSection{
+    display: flex;
+    margin: 80px 80px 0px 80px;
+    padding: 40px 40px 0px 40px;
+}
+
+.secondSection{
+  margin: 0px 80px 0px 80px;
+    padding: 10px 40px 40px 40px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+/* ---------Dashboard ----------- */
+.dashboard-container{
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.dashboard-logo-section{
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-section{
+  margin: 0 80px 0 80px;
+}
+
+.sub-heading-section{
+  margin-top: 50px;
+}
+
+.slide {
+  display: inline-block;
+}
+
+.slide.hidden {
+  display: none;
+}
+
+.slide-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slide-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for sliding */
+}
+
+.slide {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
+.dot.active {
+  background-color: gray; /* Change color for active dot */
+}
+
+.rounded-dot {
+  width: 20px;
+  height: 20px;
+  /* background-color: white; */
+  border-radius: 50%; /* This makes the element round */
+}
+
+.rounded-dot.active {
+  background-color: white;
+}
+
+.rounded-dot.active {
+  background-color: grey;
+}
+h5{
+  margin-bottom: 5px;
+   margin-left: 14px;
+}
+
+.footer-otherLinks{
+/* display: block; */
+}
+
+.list-style {
+  color: #fff;
+  list-style-type: none; /* remove bullet points */
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 660px) {
+  .loginSection {
+    display: block;
+    margin: 40px;
+    padding: 20px;
+  }
+  .line1 {
+    font-size: 12px;
+  }
+  .line2 {
+    font-size: 24px;
+  }
+  .line3 {
+    font-size: 12px;
+  }
+  .emailInputField {
+    margin-top: 10px;
+    width: 85%;
+  }
+  .footer-otherLinks {
+    display: flex;
+    background-color: #000;
+  }
+  .list-style {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 995px) {
+  .mainSection{
+  display: block;
+  margin: 37px 37px 0px 37px;
+  padding: 40px 0px 0px 0px;
+  }
+  .button-text-container {
+    display: flex;
+    margin-top: 9px;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.secondSection{
+  margin: 0;
+  padding: 10px 20px 40px 20px;
+}
+.passwordInputField{
+  margin: -12px;
+ font-size: 15px;
+}
+.center {
+  /* padding: 13px; */
+  width: 94%;
+}
+}
+
+@media (max-width : 768px){
+h5{
+  margin-left: 2px;
+}
 }
